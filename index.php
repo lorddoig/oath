@@ -2,11 +2,7 @@
     include 'header.php';
 
     $langs = array(
-        'ar' => 'Arabic',
-        'en' => 'English',
-        'el' => 'Ελληνικά',
-        'de' => 'Deutsch',
-        'sv' => 'Svenska'
+        'en' => 'English'
     );
     $params = explode( '?', $_SERVER[ 'REQUEST_URI' ] );
     if ( isset( $params[ 1 ] ) && isset( $langs[ $params[ 1 ] ] ) ) {
@@ -33,7 +29,7 @@
         <link rel="shortcut icon" href="script.png" />
     </head>
     <body>
-        <a href="https://github.com/dionyziz/oath"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+        <a href="https://github.com/lorddoig/oath"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
         <div class="world">
             <h1><?= $_[ I_TITLE ] ?></h1>
             <p class="introduction">
